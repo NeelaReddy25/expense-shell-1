@@ -26,5 +26,5 @@ then
     mysql_secure_installation --set-root-pass ExpenseApp@1 &>>$LOGFILE
     VALIDATE $? "MYSQL Root password setup"
 else
-    echo "MYSQL Root password setup...$Y SKIPPING $N"
+    echo -e "MYSQL Root password setup...$Y SKIPPING $N"
 fi    
