@@ -40,10 +40,10 @@ npm install &>>$LOGFILE
 VALIDATE $? "Installing nodejs dependencies"
 
 cp /home/ec2-user/expense-shell-1/backend.service /etc/stystemd/system/backend.service &>>$LOGFILE
-VALIADTE $? "Copied backend service"
+VALIDATE $? "Copied backend service"
 
 systemctl daemon-reload &>>$LOGFILE
-VALIDTE $? "Daemon Reload"
+VALIDATE $? "Daemon Reload"
 
 systemctl start backend &>>$LOGFILE
 VALIDATE $? "Starting backend"
